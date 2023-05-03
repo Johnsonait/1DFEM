@@ -3,6 +3,8 @@ set(SOURCES
     1DFEM.cpp
     program.cpp
     problem_data.cpp
+    fem_solver.cpp
+    screen_writer.cpp
 )
 
 # Create executable

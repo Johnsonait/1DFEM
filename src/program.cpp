@@ -5,7 +5,8 @@ namespace FEM
 
 void FEM::Program::Run()
 {
-    std::cout<< this->data->E <<std::endl;;
+    FEMSolver solver{};
+    solver.solve(this->data);
     return;
 }
 

@@ -4,7 +4,8 @@
 #include <memory>
 #include <iostream>
 
-#include "../include/problem_data.hpp"
+#include "./problem_data.hpp"
+#include "./fem_solver.hpp"
 
 namespace FEM
 {
@@ -15,7 +16,7 @@ public:
     Program() = default;
     void Run();
 private:
-    const std::unique_ptr<ProblemData> data = std::make_unique<ProblemData>();
+    const std::shared_ptr<ProblemData> data = std::make_shared<ProblemData>();
 };
 
 }
