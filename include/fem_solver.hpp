@@ -4,6 +4,8 @@
 #include "./problem_data.hpp"
 #include "./screen_writer.hpp"
 #include "./elements.hpp"
+#include "./quadrature_data.hpp"
+#include "./logging.hpp"
 
 #include <memory>
 #include <string>

@@ -16,7 +16,6 @@ LagrangeElement::LagrangeElement(int32_t nodes)  : N(nodes), lagrange_points(nod
     for(int nd = 0; nd<this->N; nd++)
     {
         this->lagrange_points[nd] = this->get_point(nd);
-        LOG(this->lagrange_points[nd]<<"\n");
     }
 }
 

@@ -1,12 +1,16 @@
 # Add source files
 set(SOURCES
-    1DFEM.cpp
-    program.cpp
     problem_data.cpp
-    fem_solver.cpp
+    stress.cpp
+    material.cpp
+    hypoelastic_material.cpp
     element.cpp
     lagrange_element.cpp
+    quadrature_data.cpp
     screen_writer.cpp
+    fem_solver.cpp
+    program.cpp
+    1DFEM.cpp
 )
 
 # Create executable
