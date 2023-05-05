@@ -7,14 +7,15 @@ void FEMSolver::solve(std::shared_ptr<ProblemData> data)
 {  
     ScreenWriter writer{};
 
-    std::stringstream ss{};
+    LagrangeElement my_element{2};
+    // std::stringstream ss{};
 
-    ss << "Some output!";
+    // ss << "Some output!";
 
-    writer.seperator('=');
-    writer.write(ss);
-    writer.seperator('=');
-    
+    // writer.seperator('=');
+    // writer.write(ss);
+    // writer.seperator('=');
+
     return;
 }
 

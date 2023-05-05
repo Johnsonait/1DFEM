@@ -4,6 +4,8 @@ set(SOURCES
     program.cpp
     problem_data.cpp
     fem_solver.cpp
+    element.cpp
+    lagrange_element.cpp
     screen_writer.cpp
 )
 

@@ -3,6 +3,7 @@
 
 #include "./problem_data.hpp"
 #include "./screen_writer.hpp"
+#include "./elements.hpp"
 
 #include <memory>
 #include <string>
