@@ -6,6 +6,8 @@
 #include "./elements.hpp"
 #include "./quadrature_data.hpp"
 #include "./logging.hpp"
+#include "./material.hpp"
+#include "./hypoelastic_material.hpp"
 
 #include <memory>
 #include <string>

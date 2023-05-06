@@ -6,6 +6,9 @@ set(SOURCES
     hypoelastic_material.cpp
     element.cpp
     lagrange_element.cpp
+    force_vector.cpp
+    mass_matrix.cpp
+    assembler.cpp
     quadrature_data.cpp
     screen_writer.cpp
     fem_solver.cpp
