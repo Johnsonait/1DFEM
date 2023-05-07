@@ -15,6 +15,14 @@ Eigen::SparseMatrix<double>& GlobalMassMatrix::item()
 {
     return this->m_M;
 }
+
+GlobalMassMatrix GlobalMassMatrix::ConstructGlobalMassMatrix(std::shared_ptr<ProblemData> data)
+{
+    GlobalMassMatrix M_g{};
+
+    return M_g;
+}
+
 GlobalMassMatrix operator+(const GlobalMassMatrix& lhs, const GlobalMassMatrix& rhs)
 {
     GlobalMassMatrix ret{static_cast<GlobalMassMatrix>(lhs.m_M+rhs.m_M)};

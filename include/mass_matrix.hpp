@@ -3,6 +3,8 @@
 
 #include <Eigen/Sparse>
 
+#include "./problem_data.hpp"
+
 namespace FEM
 {
 
@@ -27,6 +29,7 @@ public:
     virtual ~GlobalMassMatrix() = default;
 
     Eigen::SparseMatrix<double>& item();
+    static GlobalMassMatrix ConstructGlobalMassMatrix(std::shared_ptr<ProblemData>);
 
     friend GlobalMassMatrix operator+(const GlobalMassMatrix&, const GlobalMassMatrix&);
 
