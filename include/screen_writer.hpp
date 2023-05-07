@@ -14,6 +14,8 @@ public:
     ScreenWriter() = default;
     ~ScreenWriter() = default;
 
+    ScreenWriter& operator=(ScreenWriter&);
+
     void clear();
     void seperator(char);
     void newline();

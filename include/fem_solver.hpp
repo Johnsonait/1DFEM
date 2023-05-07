@@ -8,6 +8,8 @@
 #include "./logging.hpp"
 #include "./material.hpp"
 #include "./hypoelastic_material.hpp"
+#include "./mass_matrix.hpp"
+#include "./force_vector.hpp"
 
 #include <memory>
 #include <string>
@@ -25,6 +27,7 @@ public:
     void solve(std::shared_ptr<ProblemData>);
 
 private:
+    ScreenWriter& write_screen(std::shared_ptr<ProblemData>,ScreenWriter&);
 };
 
 }

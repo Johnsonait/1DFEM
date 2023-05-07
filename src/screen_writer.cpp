@@ -4,6 +4,11 @@
 namespace FEM
 {
 
+ScreenWriter& ScreenWriter::operator=(ScreenWriter& in)
+{
+    return in;
+}
+
 void ScreenWriter::clear_and_write(std::stringstream& ss)
 {
     this->clear();
